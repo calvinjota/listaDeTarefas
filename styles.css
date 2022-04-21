@@ -7,16 +7,58 @@
 body {
     height: 100vh;
     background-image: linear-gradient(100deg, #575656, rgb(6, 48, 65));
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
 }
 
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 7px;
+    box-shadow: 0px 8px 10px rgba(255, 255, 255, 0.897);
+    margin-bottom: 3%;
+}
+
+.clock div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+#hours {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+#minutes {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+#seconds {
+    font-weight: bolder;
+    font-size: 60px;
+}
+/*------------------------------------------------------------*/
 .container {
     border: 2px solid rgba(139, 139, 139, 0.219);
     border-radius: 20px;
-    padding: 10px 10px;
     min-width: 500px;
+    padding: 10px 10px;
 }
 
 .new_task_container {
